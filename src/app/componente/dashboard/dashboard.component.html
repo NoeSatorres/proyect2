@@ -1,1 +1,57 @@
-<p>dashboard works!</p>
+<br>
+<br>
+<div class="container">
+
+    <h2><b>{{tituloEvent}}</b></h2>
+    <br>
+    <p>{{textEvent}}</p>
+    <button (click)="cambiarTexto()">Boton</button>
+    <br>
+    <br>
+    <ul><b>Suma:</b>{{ num1 }} + {{ num2 }} = {{sumaEvent}}</ul>
+    <button (click)="sumar()">Sumar</button>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>{{ titulo }}</h2>
+    <br>
+    <p>{{ desc }}</p>
+    <br>
+    <ul>
+        <li> <b>Nombre:</b> {{ nombre }}</li>
+        <li> <b>Apellido: </b> {{ apellido }}</li>
+        <li> <b>Profesor: </b> {{ profesor }}</li>
+        <li> <b>Materia: </b> {{ getMateria()}}</li>
+        <li> <b> Instituto: </b> {{ nEsc }}</li>
+        <li> <b>Suma: </b> {{ num1 }} + {{num2}} = {{sumar()}}</li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+
+    <h2>{{tPropert}}</h2>
+    <img [src]="imagen" width="60%">
+    <br>
+    <br>
+    <img [src]="imagen2" width="60%">
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, reprehenderit nesciunt possimus quo, optio
+        dignissimos nostrum mollitia accusamus hic obcaecati aperiam alias velit sunt veritatis minima officia. Aperiam,
+        placeat aliquid!</p>
+
+    <b>Nombre del alumno:</b> <input type="text" [placeholder]="name">
+
+    <br>
+    <br>
+
+    <b>Apellido del alumno:</b> <input type="text" [placeholder]="tPropet">
+    <br>
+    <br>
+
+
+
+</div>
